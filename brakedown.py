@@ -33,6 +33,7 @@ os.chdir(stylespath)
 css = open("styles.css", "w")
 tempStyles = open("template.css", "w")
 tempStyles.write(".datauri {\n\twidth: 50px;\n\theight: 50px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: 50px 50px;\n}\n\n")
+tempStyles.close()
 os.chdir("..")
 svgs = [img for img in os.listdir(imagepath) if img.lower().endswith(".svg")]
 names = [] #Used to format HTML
