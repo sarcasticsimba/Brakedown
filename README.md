@@ -15,4 +15,5 @@ How to install
 Usage
 -----
 `brakedown`: grabs all SVGs in your current directory, outputs to current directory
+
 `breakdown path/to/svgs`: grabs all SVGs in given path, outputs to given dirctory
