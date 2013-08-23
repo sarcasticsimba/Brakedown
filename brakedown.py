@@ -21,6 +21,7 @@ else:
 	quit()
 
 #Creating directory
+os.chdir(imagepath)
 if os.path.exists("styles"):
 	shutil.rmtree("styles")
 	os.mkdir("styles")
