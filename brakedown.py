@@ -31,7 +31,8 @@ else:
 #Creating CSS
 os.chdir(stylespath)
 css = open("styles.css", "w")
-css.write(".datauri {\n\twidth: 50px;\n\theight: 50px;\n}\n\n")
+tempStyles = open("template.css", "w")
+tempStyles.write(".datauri {\n\twidth: 50px;\n\theight: 50px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: 50px 50px;\n}\n\n")
 os.chdir("..")
 svgs = [img for img in os.listdir(imagepath) if img.lower().endswith(".svg")]
 names = [] #Used to format HTML
@@ -46,8 +47,8 @@ css.close();
 
 #Formatting sample HTML document
 os.chdir(stylespath)
-html = open("index.html", "w+")
-html.write("<html>\n\t<head>\n\t\t<link rel='stylesheet' type='text/css' href='styles.css'></link>\n\t</head>\n\t<body style='background-color: #eee'>\n\t\t<h1>SVG Icons</h1>")
+html = open("template.html", "w+")
+html.write("<html>\n\t<head>\n\t\t<link rel='stylesheet' type='text/css' href='styles.css'></link>\n\t\t<link rel='stylesheet' type='text/css' href='template.css'></link>\n\t</head>\n\t<body style='background-color: #eee'>\n\t\t<h1>SVG Icons</h1>")
 for classname in names:
 	html.write("\n\t\t<h3>" + os.path.splitext(classname)[0] + "</h3><div class= 'datauri " + os.path.splitext(classname)[0] + "'></div>")
 html.write("\n\t</body>\n</html>")
