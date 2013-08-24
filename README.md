@@ -5,6 +5,10 @@ Converts all SVG files in a directory into a CSS file with one class per image c
 
 How to install
 --------------
+Well, it's a python script. Run it as usual. `python brakedown.py path/to/svgs`
+
+But if you want to be a Brakedown Power User<sup>tm</sup>, you can do the following:
+
 ###OS X###
 
 ###Windows###
