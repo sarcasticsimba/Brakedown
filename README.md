@@ -14,7 +14,9 @@ But if you want to be a Brakedown Power User<sup>tm</sup>, you can do the follow
 
 Do one of the following:
 - Create a symlink to Brakedown (suggested name: bkd)
+
 OR
+
 - Chop off the `.py` extension
 - Alias Brakedown to anything you'd like (If you haven't caught on, I suggest `bkd`)
 
